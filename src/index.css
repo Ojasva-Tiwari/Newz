@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  background: #f7f6f2;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f7f6f2;
+}
+
+.dark body {
+  background: #11151b;
+}
+
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  outline: none;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(216, 91, 57, 0.35);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: rgba(216, 91, 57, 0.22);
+}
+
+.prose-signal {
+  max-width: 700px;
+}
+
+.prose-signal p {
+  margin: 0 0 1.65rem;
+  color: #555852;
+  font-family: Newsreader, Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.62;
+  letter-spacing: -0.01em;
+}
+
+.dark .prose-signal p {
+  color: #c5c8c4;
+}
+
+.prose-signal p:first-child::first-letter {
+  float: left;
+  margin: 0.12em 0.1em 0 0;
+  color: #d85b39;
+  font-family: Newsreader, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.75;
+}
+
+@media (max-width: 640px) {
+  .prose-signal p {
+    font-size: 1.2rem;
+    line-height: 1.58;
+  }
+}
+
+img {
+  display: block;
+}
+
+option {
+  color: #12151a;
+}
